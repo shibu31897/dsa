@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run C++ active file",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${fileDirname}/${fileBasenameNoExtension}", // run the compiled binary
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${fileDirname}",
+      "environment": [],
+      "externalConsole": true,   // opens a terminal window
+      "MIMode": "lldb",
+      "preLaunchTask": "Build active C++ file" // calls your tasks.json before running
+    }
+  ]
+}

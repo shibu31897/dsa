@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build active C++ file",
+      "type": "shell",
+      "command": "clang++",
+      "args": [
+        "-std=c++17",
+        "-Wall",
+        "${file}",                 // compile the currently open file
+        "-o",
+        "${fileDirname}/${fileBasenameNoExtension}", // output binary next to source file
+        "-isysroot", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-I", "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1",
+        "-L", "/Library/Developer/CommandLineTools/usr/lib",
+        "-lc++"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"]
+    }
+  ]
+}
