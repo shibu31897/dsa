@@ -56,5 +56,6 @@
     "git.ignoreLimitWarning": true,
     "code-runner.executorMap": {
     "cpp": "clang++ -std=c++17 -Wall -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1 -L /Library/Developer/CommandLineTools/usr/lib -lc++ $fileName -o $fileNameWithoutExt && $dir/$fileNameWithoutExt"
-}
+},
+"latex-workshop.intellisense.biblatexJSON.replace": {}
 }
